@@ -22,10 +22,10 @@ import TodoFooter from "./components/TodoFooter.vue";
 export default {
   components: {
     // 컴포넌트 태그명: 컴포넌트 내용
-    TodoHeader: TodoHeader,
-    TodoInput: TodoInput,
-    TodoList: TodoList,
-    TodoFooter: TodoFooter,
+    TodoHeader,
+    TodoInput,
+    TodoList,
+    TodoFooter,
   },
   data() {
     return {
@@ -35,7 +35,7 @@ export default {
   created() {
     console.log("created");
     if (localStorage.length > 0) {
-      for (var i = 0; i < localStorage.length; i++) {
+      for (let i = 0; i < localStorage.length; i++) {
         //console.log(localStorage.key(i));
         if (localStorage.key(i) !== "loglevel:webpack-dev-server") {
           //this.todoItemes.push(localStorage.key(i));
@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     addOneItem(todoItem) {
-      var obj = { completed: false, item: todoItem };
+      const obj = { completed: false, item: todoItem };
       // localStorage.setItem(this.newTodoItem, obj);
       localStorage.setItem(todoItem, JSON.stringify(obj));
       this.todoItemes.push(obj);
