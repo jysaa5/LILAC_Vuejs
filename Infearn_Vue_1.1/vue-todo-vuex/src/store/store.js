@@ -34,6 +34,10 @@ export const store = new Vuex.Store({
             };
             localStorage.setItem(todoItem, JSON.stringify(obj));
             state.todoItemes.push(obj)
+        },
+        removeOneItem(state, payload) {
+            localStorage.removeItem(payload.todoItem.item);
+            state.todoItemes.splice(payload.index, 1);
         }
     }
 });
