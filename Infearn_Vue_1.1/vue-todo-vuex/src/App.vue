@@ -10,11 +10,9 @@
       v-on:removeItem="removeOneItem"
       v-on:toggleItem="toggleOneItem"
     ></todo-list> -->
-    <todo-list
-      v-bind:propsdata="todoItemes"
-      v-on:toggleItem="toggleOneItem"
-    ></todo-list>
-    <todo-footer v-on:clearAll="clearAllItemes"></todo-footer>
+    <todo-list></todo-list>
+    <!-- <todo-footer v-on:clearAll="clearAllItemes"></todo-footer> -->
+    <todo-footer></todo-footer>
   </div>
 </template>
 
@@ -32,11 +30,11 @@ export default {
     TodoList,
     TodoFooter,
   },
-  data() {
-    return {
-      todoItemes: [],
-    };
-  },
+  // data() {
+  //   return {
+  //     todoItemes: [],
+  //   };
+  // },
   created() {
     console.log("created");
     // if (localStorage.length > 0) {
@@ -65,17 +63,17 @@ export default {
     //   localStorage.removeItem(todoItem.item);
     //   this.todoItemes.splice(index, 1);
     // },
-    toggleOneItem(todoItem, index) {
-      // todoItem.completed = !todoItem.completed;
-      this.todoItemes[index].completed = !this.todoItemes[index].completed;
-      // 로컬 스토리지의 데이터를 갱신
-      localStorage.removeItem(todoItem.item);
-      localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
-    },
-    clearAllItemes() {
-      localStorage.clear();
-      this.todoItemes = [];
-    },
+    // toggleOneItem(todoItem, index) {
+    //   // todoItem.completed = !todoItem.completed;
+    //   this.todoItemes[index].completed = !this.todoItemes[index].completed;
+    //   // 로컬 스토리지의 데이터를 갱신
+    //   localStorage.removeItem(todoItem.item);
+    //   localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
+    // },
+    // clearAllItemes() {
+    //   localStorage.clear();
+    //   this.todoItemes = [];
+    // },
   },
 };
 </script>

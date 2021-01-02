@@ -38,7 +38,8 @@ export default {
     },
     toggleComplete(todoItem, index) {
       console.log(todoItem, index);
-      this.$emit("toggleItem", todoItem, index);
+      // this.$emit("toggleItem", todoItem, index);
+      this.$store.commit("toggleOneItem", { todoItem, index });
     },
   },
 };

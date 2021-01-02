@@ -38,6 +38,17 @@ export const store = new Vuex.Store({
         removeOneItem(state, payload) {
             localStorage.removeItem(payload.todoItem.item);
             state.todoItemes.splice(payload.index, 1);
+        },
+        toggleOneItem(state, payload) {
+            // todoItem.completed = !todoItem.completed;
+            state.todoItemes[payload.index].completed = !state.todoItemes[payload.index].completed;
+            // 로컬 스토리지의 데이터를 갱신
+            localStorage.removeItem(payload.todoItem.item);
+            localStorage.setItem(payload.todoItem.item, JSON.stringify(payload.todoItem));
+        },
+        clearAllItemes(state) {
+            localStorage.clear();
+            state.todoItemes = [];
         }
     }
 });
