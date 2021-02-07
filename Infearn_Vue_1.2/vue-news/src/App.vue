@@ -5,7 +5,14 @@ hello
 </template>
 
 <script>
-
+/* eslint-disable */
+export default{
+  methods:{
+    fetchData(){
+      console.log('hello');
+    }
+  }
+}
 </script>
 
 <style>
