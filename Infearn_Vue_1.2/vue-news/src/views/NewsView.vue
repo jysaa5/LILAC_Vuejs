@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="user in users">{{user.title}}</div>
+        <div v-for="user in this.$store.state.news">{{user.title}}</div>
     </div>
 </template>
 
@@ -8,11 +8,11 @@
 // import axios from 'axios';
 import {fetchNewsList} from '../api/index.js'
 export default {
-    data(){
-        return{
-            users: []
-        }
-    },
+    // data(){
+    //     return{
+    //         users: []
+    //     }
+    // },
     created(){
         // 바인딩 문제 때문.
         // var vm = this;
@@ -33,7 +33,7 @@ export default {
         //     console.log(error);
         // })
 
-        this.users = this.$store.dispatch('FETCH_NEWS');
+       this.$store.dispatch('FETCH_NEWS');
     }
 }
 </script>
