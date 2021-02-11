@@ -15,20 +15,25 @@ export default {
     },
     created(){
         // 바인딩 문제 때문.
-        var vm = this;
+        // var vm = this;
         // axios.get('https://api.hnpwa.com/v0/news/1.json')
-        console.log('호출 전:', this);
-        fetchNewsList()
-        // .then(function(response){
-            .then((response)=>{
-            console.log(response);
-            vm.users = response.data;
-            console.log('호출 후:', this)
-        })
-        // .catch(function(error){
-            .catch((error) => {
-            console.log(error);
-        })
+        // console.log('호출 전:', this);
+
+        // 1
+        // fetchNewsList()
+        // // .then(function(response){
+        //     .then((response)=>{
+        //     console.log(response);
+        //     // 2
+        //     this.users = response.data;
+        //     console.log('호출 후:', this)
+        // })
+        // // .catch(function(error){
+        //     .catch((error) => {
+        //     console.log(error);
+        // })
+
+        this.users = this.$store.dispatch('FETCH_NEWS');
     }
 }
 </script>
