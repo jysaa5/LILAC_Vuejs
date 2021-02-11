@@ -6,7 +6,7 @@
 
 <script>
 // import axios from 'axios';
-import {fetchNewsList} from '../api/index.js'
+// import {fetchNewsList} from '../api/index.js'
 export default {
     // data(){
     //     return{
