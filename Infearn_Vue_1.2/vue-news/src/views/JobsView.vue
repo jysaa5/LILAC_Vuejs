@@ -1,6 +1,6 @@
 <template>
     <div>
-         <div v-for="job in this.$store.state.jobs">{{job}}</div>
+         <div v-for="job in this.$store.state.jobs">{{job.title}}</div>
     </div>
 </template>
 

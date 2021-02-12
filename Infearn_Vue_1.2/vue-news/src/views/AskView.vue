@@ -1,17 +1,37 @@
 <template>
     <div>
-         <div v-for="item in this.$store.state.asks">{{item}}</div>
+         <!-- <div v-for="item in this.$store.state.asks">{{item.title}}</div> -->
+         <!-- <div v-for="item in askItems">{{item.title}}</div> -->
+         <div v-for="item in fetchedAsk">{{item.title}}</div>
     </div>
 </template>
 
 <script>
 // import {fetchAskList} from '../api/index.js'
+import {mapState, mapGetters} from 'vuex';
 export default {
     //  data(){
     //     return{
     //         ask: []
     //     }
     //  },
+    computed: {
+        ...mapGetters(['fetchedAsk'])
+        // #3
+        // ...mapGetters({
+        //     askItems: 'fetchedAsk'
+        // })
+
+        // #2
+        // ...mapState({
+        //     ask: state => state.asks
+        // }),
+
+        // #1
+        // ask(){
+        //     return this.$store.state.ask;
+        // }
+    },
      created(){
         // 바인딩 문제 때문.
         // var vm = this;
