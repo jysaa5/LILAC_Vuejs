@@ -9,7 +9,8 @@ export const store = new Vuex.Store({
     state:{
         news: [],
         jobs: [],
-        asks: []
+        asks: [],
+        user: {},
     },
     // computed와 동일한 속성
     getters: {
