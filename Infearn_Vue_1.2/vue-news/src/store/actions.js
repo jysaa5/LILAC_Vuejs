@@ -43,5 +43,9 @@ export default {
         .catch(error => {
             console.log(error);
         });
+    },
+
+    FETCH_ITME({commit}, id){
+        
     }
 }
