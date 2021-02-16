@@ -1,4 +1,4 @@
-import {fetchAskList, fetchJobsList, fetchNewsList, fetchUserInfo} from '../api/index.js';
+import {fetchAskList, fetchJobsList, fetchNewsList, fetchUserInfo, fetchCommentItem} from '../api/index.js';
 export default {
      // 첫번째 인자로 context를 받아야 함.
      FETCH_NEWS(context){
@@ -46,6 +46,12 @@ export default {
     },
 
     FETCH_ITME({commit}, id){
-        
+        fetchCommentItem(id)
+        .then(({data}) =>{
+            commit('SET_ITME', data);
+        }) 
+        .catch(error =>{
+            console.log(error);
+        })   
     }
 }
