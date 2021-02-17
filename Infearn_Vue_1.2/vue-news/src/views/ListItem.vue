@@ -1,21 +1,21 @@
 <template>
     <div>
-        <ul class="news-list">
-            <li v-for="job in this.$store.state.jobs" class="post">
+         <ul class="news-list">
+            <li v-for="item in this.$store.state.news" class="post">
                 <!-- 포인트 영역 -->
                 <div class="points">
-                    {{job.points || 0}}
+                    {{item.points}}
                 </div>
                 <!-- 기타 정보 영역 -->
                 <div>
                     <p class='news-title'>
-                    <a :href="job.url">{{job.title}}</a>
+                        <a v-bind:href="item.url">
+                        {{item.title}}
+                        </a>
                     </p>
                     <small class="link-text">
-                       {{job.time_ago}} by
-                       <a :href="job.url">
-                           {{job.domain}}
-                       </a>
+                    {{item.time_ago}} by
+                    <router-link v-bind:to="`/user/${item.user}`" class="link-text">{{item.user}}</router-link>
                     </small>
                 </div>
             </li>
@@ -24,20 +24,9 @@
 </template>
 
 <script>
-// import {fetchJobsList} from '../api/index.js'
-export default {
-    //     data(){
-    //     return{
-    //         jobs: []
-    //     }
-    // },
-    created(){
-        // axios.get('https://api.hnpwa.com/v0/news/1.json')
-        // fetchJobsList()
-        // .then(response => this.jobs = response.data)
-        // .catch(error => console.log(error));
-        
-        this.$store.dispatch('FETCH_JOBS');
+export default{
+    created() {
+        this.$store.dispatch('FETCH_NEWS');
     }
 }
 </script>
