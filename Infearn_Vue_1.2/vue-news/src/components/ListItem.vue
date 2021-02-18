@@ -1,10 +1,10 @@
 <template>
     <div>
          <ul class="news-list">
-            <li v-for="item in this.$store.state.news" class="post">
+            <li v-for="item in listItems" class="post">
                 <!-- 포인트 영역 -->
                 <div class="points">
-                    {{item.points}}
+                    {{item.points || 0}}
                 </div>
                 <!-- 기타 정보 영역 -->
                 <div>
@@ -27,17 +27,29 @@
 export default{
     created() {
         //this.$store.dispatch('FETCH_NEWS');
-        console.log(this.$route.path === '/news');
+        // console.log(this.$route.path === '/news');
+        // const name = this.$route.name;
+        // if(name === 'news'){
+        //     this.$store.dispatch('FETCH_NEWS');
+        // }else if(name === 'asks'){
+        //     this.$store.dispatch('FETCH_ASKS');
+        // }else if(name === 'jobs'){
+        //     this.$store.dispatch('FETCH_JOBS');
+        // }
+    },
+    computed:{
+    listItems() {
         const name = this.$route.name;
         if(name === 'news'){
-            this.$store.dispatch('FETCH_NEWS');
-        }else if(name === 'ask'){
-            this.$store.dispatch('FETCH_ASK');
+         return this.$store.state.news;
+        }else if(name === 'asks'){
+         return this.$store.state.asks;
         }else if(name === 'jobs'){
-            this.$store.dispatch('FETCH_JOBS');
+         return this.$store.state.jobs;
         }
-    },
-    computed:{}
+        return '';
+        }
+    }
 }
 </script>
 

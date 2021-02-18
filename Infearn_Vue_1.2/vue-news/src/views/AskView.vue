@@ -7,7 +7,7 @@
 <script>
 // import {fetchAskList} from '../api/index.js'
 import ListItem from '../components/ListItem.vue';
-import {mapState, mapGetters} from 'vuex';
+//import {mapState, mapGetters} from 'vuex';
 export default {
   components: { ListItem },
     //  data(){
@@ -16,7 +16,7 @@ export default {
     //     }
     //  },
     computed: {
-        ...mapGetters(['fetchedAsk'])
+        //...mapGetters(['fetchedAsk'])
         // #3
         // ...mapGetters({
         //     askItems: 'fetchedAsk'

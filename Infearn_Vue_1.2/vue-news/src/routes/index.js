@@ -11,11 +11,11 @@ Vue.use(VueRouter);
 export const router = new VueRouter({
     mode: 'history',
     routes:[
-        {
-            path: '/',
-            redirect: '/news',
-        },
-        {
+    {
+        path: '/',
+        redirect: '/news',
+    },
+    {
         // path: url 주소
         path: '/news',
         name: 'news',
@@ -23,8 +23,8 @@ export const router = new VueRouter({
         component: NewsView,
     }, 
     {
-        path: '/ask',
-        name: 'ask',
+        path: '/asks',
+        name: 'asks',
         component: AskView,
     },
     {
