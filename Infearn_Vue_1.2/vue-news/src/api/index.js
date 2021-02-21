@@ -6,17 +6,18 @@ const config = {
 }
 
 // 2. API 함수들을 정리
-function fetchNewsList(){
+function fetchNewsList() {
     // return axios.get('https://api.hnpwa.com/v0/news/1.json');
     // return axios.get(config.baseUrl + 'news/1.json');
     return axios.get(`${config.baseUrl}news/1.json`);
 }
 
-function fetchJobsList(){
-    return axios.get(`${config.baseUrl}jobs/1.json`);
+function fetchJobsList() {
+    // return axios.get(`${config.baseUrl}jobs/1.json`); // CORS 이슈
+    return axios.get(`${config.baseUrl}newest/1.json`)
 }
 
-function fetchAskList(){
+function fetchAskList() {
     return axios.get(`${config.baseUrl}ask/1.json`);
 }
 
@@ -24,7 +25,7 @@ function fetchUserInfo(username) {
     return axios.get(`${config.baseUrl}user/${username}.json`);
 }
 
-function fetchCommentItem(id){
+function fetchCommentItem(id) {
     return axios.get(`${config.baseUrl}item/${id}.json`);
 }
 
