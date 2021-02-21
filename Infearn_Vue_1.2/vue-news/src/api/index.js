@@ -31,8 +31,8 @@ function fetchCommentItem(id) {
 
 export {
     fetchNewsList,
-    fetchJobsList,
     fetchAskList,
+    fetchJobsList,
     fetchUserInfo,
     fetchCommentItem
 }

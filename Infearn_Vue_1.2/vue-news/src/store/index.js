@@ -1,27 +1,21 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 // import {fetchAskList, fetchJobsList, fetchNewsList} from '../api/index.js';
+import getters from './getters.js';
 import mutations from './mutations.js';
 import actions from './actions.js';
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-    state:{
+    state: {
         news: [],
-        jobs: [],
         asks: [],
+        jobs: [],
         user: {},
-        item: []
+        item: {}
     },
     // computed와 동일한 속성
-    getters: {
-        fetchedAsk(state){
-            return state.asks;
-        },
-        fetchedItem(state){
-            return state.item;
-        }
-    },
+    getters,
     // mutations: mutations,
     mutations,
     actions,

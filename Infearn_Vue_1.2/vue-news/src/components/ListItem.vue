@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="news-list">
-      <li v-for="item in listItems" class="post">
+      <li v-for="item in listItems" class="post" :key="item.id">
         <!-- 포인트 영역 -->
         <div class="points">
           {{ item.points || 0 }}
@@ -14,25 +14,33 @@
               <a v-bind:href="item.url">
                 {{ item.title }}
               </a>
+              <small class="link-text" v-if="item.domain">
+                ({{ item.domain }})
+              </small>
             </template>
             <template v-else>
               <router-link v-bind:to="`item/${item.id}`">
                 {{ item.title }}
               </router-link>
+              <small>
+                <a
+                  class="link-text"
+                  v-bind:href="item.domain"
+                  v-if="item.domain"
+                >
+                  ({{ item.domain }})
+                </a>
+              </small>
             </template>
           </p>
-          <small class="link-text">
-            {{ item.time_ago }} by
-            <router-link
-              v-if="item.user"
-              v-bind:to="`/user/${item.user}`"
-              class="link-text"
-            >
+          <small v-if="item.user" class="link-text">
+            by
+            <router-link :to="`/user/${item.user}`" class="link-text">
               {{ item.user }}
             </router-link>
-            <a :href="item.url" v-else>
-              {{ item.domain }}
-            </a>
+          </small>
+          <small v-if="item.time_ago" class="link-text">
+            {{ item.time_ago }}
           </small>
         </div>
       </li>
@@ -57,6 +65,7 @@ export default {
   computed: {
     listItems() {
       const name = this.$route.name;
+      console.log("현재 루트>>>>", name);
       if (name === "news") {
         return this.$store.state.news;
       } else if (name === "asks") {
