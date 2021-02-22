@@ -7,7 +7,12 @@
       <!-- <router-link :to="`/user/${userInfo.user}`">
         {{ userInfo.id }}
       </router-link> -->
-      <div>{{ info.id }}</div>
+      <template v-if="this.$route.name === 'item'">
+        <div>{{ info.id }}</div>
+      </template>
+      <template v-else>
+        <div>{{ info.user }}</div>
+      </template>
       <div class="time">
         {{ info.created }}
       </div>
