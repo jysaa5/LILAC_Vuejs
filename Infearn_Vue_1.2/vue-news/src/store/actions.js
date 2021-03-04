@@ -86,14 +86,18 @@ export default {
                 console.log(error);
             })
     },
-
+    // # 2
     FETCH_LIST({
         commit
     }, pageName) {
-        fetchList(pageName)
-            .then(({
-                data
-            }) => commit('SET_LIST', data))
-            .catch((error => console.log(error)));
-    }
+        // # 3
+        return fetchList(pageName)
+            .then(response => {
+                // # 4
+                console.log(4)
+                commit('SET_LIST', response.data);
+                return response;
+            })
+            .catch(error => console.log(error));
+    },
 }

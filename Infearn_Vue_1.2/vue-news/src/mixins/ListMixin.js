@@ -4,8 +4,11 @@ export default {
 
     created() {
         bus.$emit('start:spinner');
+        // # 1
         this.$store.dispatch('FETCH_LIST', this.$route.name)
             .then(() => {
+                // # 5
+                console.log(5);
                 console.log('fetched');
                 bus.$emit('end:spinner');
             })

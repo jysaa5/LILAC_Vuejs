@@ -7,9 +7,9 @@
 <script>
 // import {fetchAskList} from '../api/index.js'
 import ListItem from "../components/ListItem.vue";
+import ListMixin from "../mixins/ListMixin.js";
 // import bus from "../utils/bus.js";
 //import {mapState, mapGetters} from 'vuex';
-import ListMixin from "../mixins/ListMixin.js";
 export default {
   components: { ListItem },
   mixins: [ListMixin],
