@@ -59,6 +59,9 @@ export default {
   //       });
   //   }, 3000);
   // },
+  // mounted() {
+  //   bus.$emit("end:spinner");
+  // },
 };
 </script>
 

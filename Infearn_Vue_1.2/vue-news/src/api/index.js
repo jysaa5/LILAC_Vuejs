@@ -14,15 +14,26 @@ function fetchNewsList() {
 
 function fetchJobsList() {
     // return axios.get(`${config.baseUrl}jobs/1.json`); // CORS 이슈
-    return axios.get(`${config.baseUrl}newest/1.json`)
+    return axios.get(`${config.baseUrl}jobs/1.json`)
 }
 
-function fetchAskList() {
-    return axios.get(`${config.baseUrl}ask/1.json`);
+// 에러 처리
+async function fetchAskList() {
+    try {
+        // const response = await axios.get(`${config.baseUrl}ask/1.json`);
+        const response = await axios.get(`${config.baseUrl}ask/1.json`);
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-function fetchList(pageName) {
-    return axios.get(`${config.baseUrl}${pageName}/1.json`);
+async function fetchList(pageName) {
+    try {
+        return await axios.get(`${config.baseUrl}${pageName}/1.json`);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 function fetchUserInfo(username) {
