@@ -1,4 +1,6 @@
 # Study Vue.js
+Design Pattern
+
 
 # Vue.js Code Snippet
 
