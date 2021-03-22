@@ -3,7 +3,8 @@
 1. Vue
 2. Vue CLI
 3. Vuex
-4. Design Pattern
+4. Ant Design of Vue
+5. Design Pattern
 
 
 # Vue.js Code Snippet
