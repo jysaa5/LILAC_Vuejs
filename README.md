@@ -2,8 +2,8 @@
 
 1. Vue
 2. Vue CLI
-
-Design Pattern
+3. Vuex
+4. Design Pattern
 
 
 # Vue.js Code Snippet
