@@ -6,10 +6,10 @@
 + Design Pattern
 
 ------------
-# Vue.js Code Snippet
+### Vue.js Code Snippet
 + Flask + Vue.js
 + Node.js + Vue.js
 ------------
-# Vue.js Study
+### Vue.js Study
 + Infearn
 + Do it
