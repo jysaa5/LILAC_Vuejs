@@ -14,4 +14,5 @@
 ------------
 ### Vue.js Study
 + Infearn
+  + [Cracking Vue.js](https://joshua1988.github.io/vue-camp/)
 + Do it
