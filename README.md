@@ -1,14 +1,11 @@
-# Study Vue.js
+# Vue.js
++ Vue
++ Vue CLI
++ Vuex
++ Ant Design of Vue
++ Design Pattern
 
-1. Vue
-2. Vue CLI
-3. Vuex
-4. Ant Design of Vue
-5. Design Pattern
-
-
+------------
 # Vue.js Code Snippet
-
-Flask + Vue.js
-
-Node.js + Vue.js
++ Flask + Vue.js
++ Node.js + Vue.js
