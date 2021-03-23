@@ -1,8 +1,10 @@
 # Vue.js
 + [Vue](https://vuejs.org/)
-+ Vue CLI
-+ Vuex
-+ Ant Design of Vue
++ [Vue CLI](https://cli.vuejs.org/)
++ [Vuex](https://vuex.vuejs.org/)
++ [Ant Design of Vue](https://antdv.com/docs/vue/introduce/)
++ [Chart.js](https://www.chartjs.org/)
++ [vue-chartjs](https://vue-chartjs.org/)
 + Design Pattern
 
 ------------
