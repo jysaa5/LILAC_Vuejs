@@ -12,7 +12,7 @@
 + Design Pattern
 
 ------------
-### Vue.js Code Snippet
+### Vue.js Project
 + Flask + Vue.js
 + Node.js + Vue.js
 
