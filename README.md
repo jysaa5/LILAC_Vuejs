@@ -13,8 +13,8 @@
 
 ------------
 ### Vue.js Project
-+ Flask + Vue.js
-+ Node.js + Vue.js
++ Vue.js + Flask
++ Vue.js + Node.js + Express.js
 
 ------------
 ### Vue.js Study
