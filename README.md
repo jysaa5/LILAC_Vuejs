@@ -1,5 +1,6 @@
 # Vue.js
 + [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
++ [TypeScript](https://www.typescriptlang.org/)
 + [Vue](https://vuejs.org/)
 + [Vue CLI](https://cli.vuejs.org/)
 + [Vuex](https://vuex.vuejs.org/)
