@@ -11,6 +11,7 @@
 + [vue-chartjs](https://vue-chartjs.org/)
 + [D3.js](https://d3js.org/)
 + [Sigma.js](http://sigmajs.org/)
++ [axios](https://github.com/axios/axios)
 + Design Pattern
 
 ------------
