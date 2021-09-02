@@ -1,5 +1,5 @@
 ### Mac ###
-.DS_Store
+*.DS_Store
 
 # Created by https://www.toptal.com/developers/gitignore/api/vuejs,flask,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=vuejs,flask,visualstudiocode
