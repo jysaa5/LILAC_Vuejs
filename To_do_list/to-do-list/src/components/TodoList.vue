@@ -1,7 +1,7 @@
 <template>
   <section>
     <ul>
-      <li v-for="todoItem in todoItems" :key="todoItem + '-' + i">{{ todoItem }}</li>
+      <li v-for="(todoItem, i) in todoItems" :key="i">{{ i }}: {{ todoItem }}</li>
     </ul>
   </section>
 </template>
