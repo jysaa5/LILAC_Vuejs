@@ -10,6 +10,7 @@
 + [Chart.js](https://www.chartjs.org/)
 + [vue-chartjs](https://vue-chartjs.org/)
 + [D3.js](https://d3js.org/)
++ [c3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
 + [axios](https://github.com/axios/axios)
 + Design Pattern
