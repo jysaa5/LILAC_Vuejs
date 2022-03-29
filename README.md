@@ -1,6 +1,7 @@
 # Vue.js
 + [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 + [TypeScript](https://www.typescriptlang.org/)
++ [npm]
 + [Vue](https://vuejs.org/)
 + [Vue CLI](https://cli.vuejs.org/)
 + [Vuex](https://vuex.vuejs.org/)
@@ -13,7 +14,6 @@
 + [c3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
 + [axios](https://github.com/axios/axios)
-+ 
 + Design Pattern
 
 ------------
