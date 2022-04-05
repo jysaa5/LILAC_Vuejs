@@ -3,6 +3,8 @@
 + [TypeScript](https://www.typescriptlang.org/)
 + [npm](https://www.npmjs.com/)
 + [Vue](https://vuejs.org/)
+  + Vue 2
+  + Vue 3  
 + [Vue CLI](https://cli.vuejs.org/)
 + [Vuex](https://vuex.vuejs.org/)
 + [Ant Design of Vue](https://antdv.com/docs/vue/introduce/)
