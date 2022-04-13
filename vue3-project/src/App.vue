@@ -2,6 +2,7 @@
   <div class="name">{{ name }}</div>
   <div>Hello World</div>
   {{ greeting("Joo") }}
+  {{ greet }}
 </template>
 <script>
 export default {
@@ -12,9 +13,12 @@ export default {
       return "Hello, " + name;
     };
 
+    const greet = greeting(name);
+
     return {
       name,
       greeting,
+      greet,
     };
   },
 };
