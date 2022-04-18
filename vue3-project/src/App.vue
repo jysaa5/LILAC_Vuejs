@@ -1,5 +1,6 @@
 <template>
   <div class="name">{{ name }}</div>
+  <button>Click</button>
   <div>Hello World</div>
   {{ greeting("Joo") }}
   {{ greet }}
