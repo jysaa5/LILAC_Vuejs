@@ -1,6 +1,6 @@
 <template>
   <div class="name">{{ name }}</div>
-  <button class="btn btn-primary">Click</button>
+  <button class="btn btn-primary" v-on:click="consoleLog">Click</button>
   <div>Hello World</div>
   {{ greeting("Joo") }}
   {{ greet }}
@@ -16,10 +16,15 @@ export default {
 
     const greet = greeting(name);
 
+    const consoleLog = () => {
+      console.log("hello world");
+    };
+
     return {
       name,
       greeting,
       greet,
+      consoleLog,
     };
   },
 };
