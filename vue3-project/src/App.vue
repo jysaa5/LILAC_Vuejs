@@ -1,46 +1,26 @@
 <template>
-  <div :class="nameClass">{{ name }}</div>
-  <input :type="type" :value="name" />
-  <button class="btn btn-primary" @click="updateName">Click</button>
-  <div>Hello World</div>
-  {{ greeting("Joo") }}
-  <!-- {{ greet }} -->
+  <input type="text" :value="name" @input="updateName" />
+  <button class="btn btn-primary" @click="onSubmit">Click</button>
 </template>
 <script>
-import { ref, reactive } from "vue";
+import { ref } from "vue";
 export default {
   setup() {
-    let name = ref("JooYeon");
-    const type = ref("number");
-    const nameClass = ref("");
-    let arr = reactive({ id: 1 });
+    const name = ref("JooYeon");
 
-    const greeting = (name) => {
-      return "Hello, " + name;
+    const onSubmit = () => {
+      console.log(name.value);
     };
 
-    //const greet = greeting(name);
-
-    const consoleLog = () => {
-      console.log("hello world");
-    };
-
-    const updateName = () => {
-      name.value = "Developer";
-      console.log(name);
-      arr.id = 2;
-      type.value = "text";
-      nameClass.value = "name";
+    const updateName = (e) => {
+      console.log(e.target.value);
+      name.value = e.target.value;
     };
 
     return {
       name,
-      greeting,
-      //greet,
-      consoleLog,
+      onSubmit,
       updateName,
-      type,
-      nameClass,
     };
   },
 };
