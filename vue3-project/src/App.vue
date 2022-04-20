@@ -1,6 +1,6 @@
 <template>
-  <div class="name">{{ name }}</div>
-  <input type="text" v-bind:value="name" />
+  <div v-bind:class="nameClass">{{ name }}</div>
+  <input v-bind:type="type" v-bind:value="name" />
   <button class="btn btn-primary" v-on:click="updateName">Click</button>
   <div>Hello World</div>
   {{ greeting("Joo") }}
@@ -11,6 +11,8 @@ import { ref, reactive } from "vue";
 export default {
   setup() {
     let name = ref("JooYeon");
+    const type = ref("number");
+    const nameClass = ref("");
     let arr = reactive({ id: 1 });
 
     const greeting = (name) => {
@@ -27,6 +29,8 @@ export default {
       name.value = "Developer";
       console.log(name);
       arr.id = 2;
+      type.value = "text";
+      nameClass.value = "name";
     };
 
     return {
@@ -35,6 +39,8 @@ export default {
       //greet,
       consoleLog,
       updateName,
+      type,
+      nameClass,
     };
   },
 };
