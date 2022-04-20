@@ -1,7 +1,7 @@
 <template>
-  <div v-bind:class="nameClass">{{ name }}</div>
-  <input v-bind:type="type" v-bind:value="name" />
-  <button class="btn btn-primary" v-on:click="updateName">Click</button>
+  <div :class="nameClass">{{ name }}</div>
+  <input :type="type" :value="name" />
+  <button class="btn btn-primary" @click="updateName">Click</button>
   <div>Hello World</div>
   {{ greeting("Joo") }}
   <!-- {{ greet }} -->
