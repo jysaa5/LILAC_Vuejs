@@ -8,6 +8,7 @@
 + [Vue CLI](https://cli.vuejs.org/)
 + [Vue Router](https://router.vuejs.org/)
 + [Vuex](https://vuex.vuejs.org/)
++ [VueI18n](https://kazupon.github.io/vue-i18n/)
 + [Ant Design of Vue](https://antdv.com/docs/vue/introduce/)
 + [Vuetify](https://vuetifyjs.com/en/)
 + [BootstrapVue](https://bootstrap-vue.org/)
