@@ -1,5 +1,5 @@
 <template>
-  <input v-bind:type="type" v-bind:value="name" @input="updateName" />
+  <input v-bind:type="type" v-model="name" />
   <button class="btn btn-primary" @click="onSubmit">Click</button>
 </template>
 <script>
@@ -12,15 +12,9 @@ export default {
       console.log(name.value);
     };
 
-    const updateName = (e) => {
-      name.value = e.target.value;
-      console.log(e.target.value);
-    };
-
     return {
       name,
       onSubmit,
-      updateName,
     };
   },
 };
