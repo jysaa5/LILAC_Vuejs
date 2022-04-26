@@ -14,6 +14,7 @@
 + [BootstrapVue](https://bootstrap-vue.org/)
 + [Chart.js](https://www.chartjs.org/)
 + [vue-chartjs](https://vue-chartjs.org/)
++ [vue-datepicker](https://www.npmjs.com/package/vue2-datepicker)
 + [D3.js](https://d3js.org/)
 + [c3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
