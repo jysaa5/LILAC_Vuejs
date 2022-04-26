@@ -4,7 +4,9 @@
 + [npm](https://www.npmjs.com/)
 + [Vue](https://vuejs.org/)
   + Vue 2
-  + Vue 3  
+  + Vue 3
+
++ [Vue Devtools](https://devtools.vuejs.org/)
 + [Vue CLI](https://cli.vuejs.org/)
 + [Vue Router](https://router.vuejs.org/)
 + [Vuex](https://vuex.vuejs.org/)
