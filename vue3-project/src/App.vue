@@ -1,19 +1,33 @@
 <template>
-  <input v-bind:type="type" v-model="name" />
-  <button class="btn btn-primary" @click="onSubmit">Click</button>
+  <div class="container">
+    <h2>To-Do List</h2>
+    <form @submit.prevent="onSubmit" class="d-flex">
+      <div class="flex-grow-1 mr-2">
+        <input class="form-control" type="text" v-model="todo" placeholder="Type new to-do" />
+      </div>
+      <div>
+        <button class="btn btn-primary" type="submit">Add</button>
+      </div>
+    </form>
+    {{ todos }}
+  </div>
 </template>
 <script>
 import { ref } from "vue";
 export default {
   setup() {
-    const name = ref("JooYeon");
+    const todo = ref("");
+    const todos = ref([]);
 
     const onSubmit = () => {
-      console.log(name.value);
+      //e.preventDefault();
+      console.log(todo.value);
+      todos.value.push({ id: Date.now(), subject: todo.value });
     };
 
     return {
-      name,
+      todo,
+      todos,
       onSubmit,
     };
   },
