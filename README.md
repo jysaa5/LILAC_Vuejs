@@ -27,6 +27,7 @@
 ------------
 ### Vue.js Project
 + Vue.js + Flask
++ Vue.js + Fast
 + Vue.js + Node.js + Express.js
 + Vue.js + Spring Boot
 
