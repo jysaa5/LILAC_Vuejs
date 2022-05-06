@@ -19,7 +19,7 @@
 + [vue-datepicker](https://www.npmjs.com/package/vue2-datepicker)
 + [Vuetable](https://www.vuetable.com/)
 + [D3.js](https://d3js.org/)
-+ [c3.js](https://c3js.org/)
++ [C3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
 + [axios](https://github.com/axios/axios)
 + Design Pattern
