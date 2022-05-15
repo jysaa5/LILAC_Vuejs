@@ -5,6 +5,7 @@
 + [Vue](https://vuejs.org/)
   + Vue 2
   + Vue 3
++ Options API
 + composition API
 
 + [Vue Devtools](https://devtools.vuejs.org/)
