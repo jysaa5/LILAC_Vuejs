@@ -1,4 +1,4 @@
-## :computer: Technology Stack
+## :pencil2: Notion 
 + [Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
 
 ## :computer: Technology Stack
