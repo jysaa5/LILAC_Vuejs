@@ -1,7 +1,7 @@
 ## :computer: Technology Stack
++ [Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
 
-+[Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
-
+## :computer: Technology Stack
 + [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 + [TypeScript](https://www.typescriptlang.org/)
 + [npm](https://www.npmjs.com/)
@@ -30,18 +30,18 @@
 + Design Pattern
 
 ------------
-### Vue.js Project
+## Vue.js Project
 + Vue.js + Flask
 + Vue.js + Fast
 + Vue.js + Node.js + Express.js
 + Vue.js + Spring Boot
 
 ------------
-### Vue.js Study
+## Vue.js Study
 + Infearn
   + [Cracking Vue.js](https://joshua1988.github.io/vue-camp/)
 + Do it
 
 -----------
 
-### Troubleshooting
+## Troubleshooting
