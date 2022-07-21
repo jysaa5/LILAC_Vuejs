@@ -1,4 +1,7 @@
-# Vue.js
+## :computer: Technology Stack
+
++[Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
+
 + [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 + [TypeScript](https://www.typescriptlang.org/)
 + [npm](https://www.npmjs.com/)
