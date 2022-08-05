@@ -21,7 +21,7 @@
 + [BootstrapVue](https://bootstrap-vue.org/)
 + [Chart.js](https://www.chartjs.org/)
 + [vue-chartjs](https://vue-chartjs.org/)
-+ [vue-datepicker](https://www.npmjs.com/package/vue2-datepicker)
++ [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker)
 + [Vuetable](https://www.vuetable.com/)
 + [D3.js](https://d3js.org/)
 + [C3.js](https://c3js.org/)
