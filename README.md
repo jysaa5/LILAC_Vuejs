@@ -30,19 +30,15 @@
 + [C3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
 
-------------
 ## Vue.js Project
 + Vue.js + Flask
 + Vue.js + Fast
 + Vue.js + Node.js + Express.js
 + Vue.js + Spring Boot
 
-------------
 ## Vue.js Study
 + Infearn
   + [Cracking Vue.js](https://joshua1988.github.io/vue-camp/)
 + Do it
-
------------
 
 ## Troubleshooting
