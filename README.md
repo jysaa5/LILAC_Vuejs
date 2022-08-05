@@ -30,8 +30,6 @@
 + [C3.js](https://c3js.org/)
 + [Sigma.js](http://sigmajs.org/)
 
-+ Design Pattern
-
 ------------
 ## Vue.js Project
 + Vue.js + Flask
