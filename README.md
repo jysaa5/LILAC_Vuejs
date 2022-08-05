@@ -19,6 +19,7 @@
 + [Ant Design of Vue](https://antdv.com/docs/vue/introduce/)
 + [Vuetify](https://vuetifyjs.com/en/)
 + [BootstrapVue](https://bootstrap-vue.org/)
++ [QUASAR](https://quasar.dev/)
 + [Chart.js](https://www.chartjs.org/)
 + [vue-chartjs](https://vue-chartjs.org/)
 + [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker)
