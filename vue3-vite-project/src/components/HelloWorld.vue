@@ -7,6 +7,25 @@ const count = ref(0);
 </script>
 
 <template>
+  <a-dropdown>
+    <a class="ant-dropdown-link" @click.prevent>
+      Hover me
+      <DownOutlined />
+    </a>
+    <template #overlay>
+      <a-menu>
+        <a-menu-item>
+          <a href="javascript:;">1st menu item</a>
+        </a-menu-item>
+        <a-menu-item>
+          <a href="javascript:;">2nd menu item</a>
+        </a-menu-item>
+        <a-menu-item>
+          <a href="javascript:;">3rd menu item</a>
+        </a-menu-item>
+      </a-menu>
+    </template>
+  </a-dropdown>
   <h1>{{ msg }}</h1>
   <a-button type="primary">Primary Button</a-button>
   <div class="card">
