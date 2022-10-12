@@ -1,44 +1,16 @@
-## :pencil2: Notion 
-+ [Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
+# Vue 3 + TypeScript + Vite
 
-## :computer: Technology Stack
-+ [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
-+ [TypeScript](https://www.typescriptlang.org/)
-+ [npm](https://www.npmjs.com/)
-+ [Webpack](https://webpack.js.org/)
-+ [Vite](https://vitejs.dev/)
-+ [Vue](https://vuejs.org/)
-  + Vue 2
-  + Vue 3
-+ Options API
-+ composition API
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-+ [Vue Devtools](https://devtools.vuejs.org/)
-+ [Vue CLI](https://cli.vuejs.org/)
-+ [Vue Router](https://router.vuejs.org/)
-+ [Vuex](https://vuex.vuejs.org/)
-+ [axios](https://github.com/axios/axios)
+## Recommended IDE Setup
 
-+ [VueI18n](https://kazupon.github.io/vue-i18n/)
-+ [Ant Design of Vue](https://antdv.com/docs/vue/introduce/)
-+ [Vuetify](https://vuetifyjs.com/en/)
-+ [BootstrapVue](https://bootstrap-vue.org/)
-+ [QUASAR](https://quasar.dev/)
-+ [Vuetable](https://www.vuetable.com/)
-+ [Chart.js](https://www.chartjs.org/)
-+ [vue-chartjs](https://vue-chartjs.org/)
-+ [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker)
-+ [D3.js](https://d3js.org/)
-+ [C3.js](https://c3js.org/)
-+ [Sigma.js](http://sigmajs.org/)
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-## :bar_chart: Project
-+ Vue.js + Flask
-+ Vue.js + Fast
-+ Vue.js + Node.js + Express.js
-+ Vue.js + Spring Boot
+## Type Support For `.vue` Imports in TS
 
-## :books: Reference
-+ Infearn
-  + [Cracking Vue.js](https://joshua1988.github.io/vue-camp/)
-+ Do it
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+
+1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
+2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+
+You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
