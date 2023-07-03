@@ -2,9 +2,12 @@
 + [Study Room](https://violet-lilac.notion.site/Vue-js-1fb0f3f0c54745719556b80f1ffd981f)
 
 ## :computer: Technology Stack
++ [Node.js](https://nodejs.org/ko/)
++ [npm](https://www.npmjs.com/)
++ [Webpack](https://webpack.js.org/)
++ [Vite](https://vitejs.dev/)
 + [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 + [TypeScript](https://www.typescriptlang.org/)
-+ [npm](https://www.npmjs.com/)
 + [Vue](https://vuejs.org/)
   + Vue 2
   + Vue 3
