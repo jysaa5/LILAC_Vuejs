@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Timline from "./components/Timeline.vue";
+</script>
 
-<template></template>
+<template>
+  <Timline />
+</template>
 
 <style scoped></style>
